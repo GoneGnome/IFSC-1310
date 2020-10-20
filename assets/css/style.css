@@ -1,0 +1,33 @@
+html {
+    box-sizing: border-box;
+}
+*,:before,
+*,:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Comic Sans MS', sans-serif;
+    margin:0;
+    background-color: #048ABF;
+}
+
+header.primary {
+    background-color: #A7C8F2;
+    text-align:center;
+    text-shadow: 1px 1px #000000;
+    padding-top:40px;
+    padding-right:40px;
+    padding-bottom:20px;
+    padding-left:40px;
+}
+
+div.myDiv {
+    position: relative;
+    bottom: -380px;
+    
+}
+
+ul {
+  list-style: none;
+}
