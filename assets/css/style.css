@@ -29,5 +29,5 @@ div.myDiv {
 }
 
 ul {
-  list-style: none;
+  list-style-type: square;
 }
