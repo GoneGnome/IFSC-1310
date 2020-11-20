@@ -1,0 +1,244 @@
+/* Color Theme  
+ #8C0444 
+ #591547 
+ #101C40 - Base
+ #011526
+ #F20505
+*/
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 80vw;
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 10px;
+}
+
+.img-center {
+  display: block;
+  margin: 10px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  padding: 5px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+header.primary {
+  background-color: #101C40;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 1px 1px #000000;
+  padding: 6em 2em;
+  position: relative;
+}
+
+header.primary::before {
+  content: "";
+  background-image: url("../img/liftoff.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+}
+
+header.primary h1 {
+  font-size: 3.2rem;
+  margin: 20px 0;
+  position: relative;
+}
+
+header.primary h1 a {
+  color: #ffffff;
+  background-image: url("../img/spacexlogo2.png");
+  display: block;
+  width: 450px;
+  height: 70px;
+  margin: 0 auto;
+  text-indent:100%;
+  white-space:nowrap;
+  overflow:hidden;
+}
+
+header.primary h2 {
+  font-family: "Big Shoulders Stencil Text", cursive;
+  font-size: 2em;
+  margin: 20px auto 40px;
+  position: relative;
+}
+
+header.primary nav ul {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+header.primary nav li {
+  list-style-type: none;
+  padding: 0;
+  width: 20%;
+}
+
+header.primary nav a:link,
+header.primary nav a:visited {
+  color: white;
+  text-decoration: none;
+  background-color: #000000;
+  background-color: rgba(12, 134, 182, 0.4);
+  padding: 4px 8px;
+  border-radius:2px;
+  transition: 0.6s;
+  display: block;
+}
+
+header.primary nav a:hover,
+header.primary nav a:active {
+  background-color: rgba(9, 99, 134, 0.8);
+}
+
+section#content {
+  padding: 3em 0;
+}
+
+section#content h2{
+  font-family: "Big Shoulders Stencil Text", cursive;
+  font-size: 2em;
+  color: #011526;
+  text-shadow: 1px 1px #000000;
+}
+
+section#content h3{
+  font-family: "Big Shoulders Stencil Text", cursive;
+  font-size: 2em;
+  color: #011526;
+  text-shadow: 1px 1px #000000;
+}
+
+section#articles .container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
+  padding: 5px;
+}
+
+section#articles h2,
+#content h2{
+  flex: 0 0 100%;
+  color: #8C0444;
+  text-align: center;
+  font-family: "Big Shoulders Stencil Text", cursive;
+  font-size: 2em;
+  text-shadow: 1px 1px #000000;
+}
+
+#articles article.post {
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  transition: 0.4s;
+  font-size: 0.8rem;
+  border-radius: 7px;
+}
+
+#articles article.post h2 {
+  font-size: 1.5em;
+  text-shadow: 1px 1px #000000;
+}
+
+#articles .post img {
+  border-radius: 7px;
+}
+
+#articles ul {
+  padding: 0 15px;
+}
+#articles li {
+  margin-bottom: 15px;
+}
+
+#eyecatcher {
+  padding: 3em 0;
+}
+
+aside[role="complementary"] {
+  background-color: #101C40;
+  color: #ffffff;
+  padding: 2.5em;
+}
+
+aside .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+aside article.widget {
+  width: 40%;
+}
+
+article.overview table td {
+  padding: 10px;
+  column-rule-style: solid;
+  column-rule-width: 1px;
+  column-rule-color: #011526;
+}
+
+
+aside article a:link,
+aside article a:visited {
+  color: #ffffff;
+  display: block;
+  margin-top: 1.2em;
+  letter-spacing: 1.2px;
+}
+
+footer#footnote {
+  background-color: #011526;
+}
+
+#footnote h6 {
+  padding: 20px;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+#footnote h6 a:link,
+#footnote h6 a:visited {
+  color: #fff;
+}
+
+history#table {
+  column-count: 4;
+  column-gap: 40px;
+  column-rule-style: solid;
+  column-rule-width: 2px;
+  column-rule-color: lightblue;
+}
